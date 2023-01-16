@@ -24,7 +24,13 @@ def about():
 def productos():
     return render_template("productos.html")
 
+@app.route('/login', strict_slashes=False)
+def login():
+    return render_template("login.html")
 
+@app.route('/items', strict_slashes=False)
+def items():
+    return render_template("items.html")
 
 # Make sure this we are executing this file
 if __name__ == '__main__':
